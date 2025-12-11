@@ -13,8 +13,12 @@ The primary objective of this project is to present a clear, data-driven overvie
 | **Sentiment Insights** | Customer feedback is processed and categorized by sentiment to identify experience quality and improvement areas (shown on Page 3). |
 
 
-## Page 1 — Executive Summary Dashboard
-This page provides a high-level overview including:
+## Page 1 Executive Summary Dashboard
+
+<img width="1169" height="664" alt="image" src="https://github.com/user-attachments/assets/6b0e7a56-f121-418d-b2dc-d49d2c265176" />
+
+
+This page is designed for quick business understanding. It provides a high-level overview including:
 - Total premium, coverage, and claim value
 - Claims by gender
 - Claim amount by age group
@@ -22,29 +26,63 @@ This page provides a high-level overview including:
 - Claim status overview
 - Active vs inactive policy share
 
-It is designed for quick business understanding.
 
-<img width="1169" height="664" alt="image" src="https://github.com/user-attachments/assets/6b0e7a56-f121-418d-b2dc-d49d2c265176" />
+## Analysis Section
 
 
-#### Insights:
-- Total Premium, Coverage, and Claim Values provide a high-level financial overview of the insurance performance.
-- Travel insurance contributes the highest premium value, indicating strong product demand or higher policy pricing.
-- Adults are the largest contributing age group in claim amounts, followed by elderly customers, while young adults have the lowest claim volume.
-- Most policies are active, showing high customer retention and policy continuity.
-- Claim status distribution shows a significant amount of rejected and settled claims, with pending claims being the smallest segment which indicate an efficient claim resolution process.
+<img width="363" height="300" alt="image" src="https://github.com/user-attachments/assets/9b9ad71a-ac12-4cae-af91-58c1166ecc6e" />
 
-## Page 2 — Full Policy Table View
+
+The rejected claims take up the biggest portion, which suggests that many customers still struggle to meet the requirements or understand the policy conditions. This aligns with a study by Mathew & Ninan (2025), which found that in India the most common insurance complaint is claim rejection mostly caused by complicated documents, unclear instructions, and customers not fully understanding what is covered. Based on this, the company can reduce rejection rates by making documentation requirements clearer and easier to follow, for example through simple checklists, better guidance during submission, or short explanations of common policy exclusions. The same study also shows that company grievance cells are the fastest and most effective channel for resolving issues, so strengthening internal support, like quicker responses or clearer explanation when a claim is rejected, can help improve customer satisfaction. So, improving communication and the claim submission process should lead to fewer rejected claims.
+
+
+
+<img width="536" height="468" alt="image" src="https://github.com/user-attachments/assets/72a6f5fe-6c35-431d-a184-09930e3ea515" />
+
+
+Travel insurance leads premium revenue (~2.5M) but also shows high pending claim volume (57.24M total claim value).
+Travel insurance generates high revenue but also high volatility in claims due to seasonality and external risk factors (flight cancellations, weather, etc).
+
+Recommendation:
+
+- Refine underwriting criteria for travel risk - such as trip duration, destination risk tiers.
+- Incorporate dynamic pricing based on seasonality or traveler behavior.
+
+
+
+<img width="377" height="233" alt="image" src="https://github.com/user-attachments/assets/98a7baaf-d8f6-4044-a7c4-16b1fc8ab0a7" />
+
+
+
+More than half of the policies remain active, which signals relatively strong customer retention and ongoing trust in the company. However, the inactive segment which around 42% is indicating that many customers are discontinuing or letting their policies lapse. According to the study by Giri & Chatterjee (2022), high lapsation rates in the Indian insurance sector are strongly linked to mis-selling, low product understanding, and customers purchasing policies that do not match their actual needs. Their research found that many policyholders, especially younger or less financially literate groups, often do not fully understand what type of policy they own, and policies acquired due to agent influence or tax-saving motives tend to lapse later due to mismatched expectations or affordability issues.
+
+Recommendation:
+
+Increase customer education and improve after-sales support to ensure that customers understand their policy features and ongoing responsibilities.
+This can include simple product explanations, periodic check-ins, and guidance for customers who may be at higher risk of lapsation, such as those with multiple policies or those who have recently faced claim rejection.
+
+
+<img width="366" height="228" alt="image" src="https://github.com/user-attachments/assets/6a552b75-0cce-4914-bcf7-600dd45e9f6c" />
+
+
+
+Adults contribute the highest claim amount because they are in a life stage with heavier responsibilities and higher exposure to health and financial risks. Work-related stress, family obligations, and the need for regular medical check-ups make them more likely to use their insurance coverage. Elderly customers follow closely behind, driven by chronic conditions and the need for ongoing or intensive care, which naturally increases their claim amount. Meanwhile, young adults record the lowest claim total not only because they tend to be healthier and visit healthcare facilities less frequently, but also because their insurance literacy is relatively low. Many in this group often do not fully understand their policy benefits or how to use them, which aligns with Giri & Chatterjee’s (2022) finding that younger and less informed buyers are more likely to own policies they do not fully comprehend. This lower awareness contributes to underutilization and fewer claims being filed.
+
+
+
+## Page 2 Full Policy Table View
 This page presents a complete data table containing all policy and claim records without any graphical visualization. It is designed to provide a detailed view of the dataset for deeper inspection and validation.
 
 Users can:
 - View all records in a structured tabular format
 - Use drill-through to filter the table from Page 1 based on selected values
+
 <img width="1141" height="650" alt="image" src="https://github.com/user-attachments/assets/b2fadd36-05d4-4482-8f94-3bcbaceceb0c" />
 
 
 
-## Page 3 — Sentiment Analysis
+
+## Page 3 Sentiment Analysis
 This page visualizes customer feedback insights through sentiment evaluation and keyword extraction. The goal is to understand customer perception, recurring topics, and overall satisfaction trends.
 
 Components on this page include:
@@ -66,3 +104,9 @@ This page can help identify customer satisfaction levels, key service strengths,
 - Common keywords such as “service,” “process,” “policy,” and “satisfied” indicate strong satisfaction with service experience and policy handling.
 - Negative feedback mainly relates to delays and unclear policy terms, suggesting opportunities for improving communication clarity and response times.
 - Higher sentiment scores correlate with smooth claim processing and easy policy management, emphasizing the importance of efficiency in customer experience.
+
+
+
+## References
+- Giri, M., & Chatterjee, D. (2022). Life Insurance Purchase Motives, Policy Choice and Lapsation: A Case of Mis-selling? SSRN.
+- Mathew, J. M., & Ninan, A. A. (2025). Redressal Mechanism Regarding Complaints on Insurance Products. JISEM.
